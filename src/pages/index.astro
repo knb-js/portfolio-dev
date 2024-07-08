@@ -1,18 +1,44 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Badge from '../components/Badge.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import Linkedin from "../icons/Linkedin.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<section class="w-full lg:w-[740px] mx-auto py-44">
-			<h1 class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4">Hey, soy kahlil
-				<div class="flex justify-center"><Badge>Disponible para trabajar</Badge></div>
+			<h1
+				class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4"
+			>
+				<img
+					class="rounded-full w-12 h-12 mb-6"
+					src="https://i.pinimg.com/236x/e0/0a/3c/e00a3c5afca63bb4128c0adb6d877152.jpg"
+					alt="kahlildev photo"
+				/>
+				Hey, soy kahlil
+				<a
+					href="https://www.linkedin.com/in/kahlil-nu%C3%B1ez-bayuk/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center"
+					><Badge>Disponible para trabajar</Badge></a
+				>
 			</h1>
-			<h2>+2 años de experiencia. Desarrollador Web Fullstack.
-				De Santiago, Chile 🇨🇱. Especializado en el desarrollo de aplicaciones únicas.
+			<h2 class="text-xl opacity-80">
+				+2 años de experiencia. Desarrollador Web Fullstack. De
+				Santiago, Chile 🇨🇱. Especializado en el desarrollo de
+				aplicaciones únicas.
 			</h2>
+			<ul>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/kahlil-nu%C3%B1ez-bayuk/"
+					>
+						<Linkedin class:list={["w-6 h-6"]} />Linkedin</a
+					>
+				</li>
+			</ul>
 		</section>
 	</main>
 </Layout>
